@@ -29,7 +29,7 @@ jobs:
           version: 9 # Adjust if you use a specific pnpm version
 
       - name: Set up Node
-        uses: actions/node-versions@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'pnpm'
