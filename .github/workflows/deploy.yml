@@ -27,12 +27,12 @@ jobs:
         uses: pnpm/action-setup@v3
         with:
           version: 9 # Adjust if you use a specific pnpm version
+          run_install: false
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'pnpm'
+          node-version: 22
 
       - name: Install dependencies
         run: pnpm install
